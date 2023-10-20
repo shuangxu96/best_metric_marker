@@ -14,7 +14,6 @@ organized as follows:
 | SSIM   of alg.1 |  s11         | s12         |
 | ERGAS  of alg.1 |  e11         | e12         |
 | SAM    of alg.1 |  a11         | a12         |
-| :---:           | :---:        | :---:       |
 | PSNR   of alg.2 |  p21         | p22         |
 | SSIM   of alg.2 |  s21         | s22         |
 | ERGAS  of alg.2 |  e21         | e22         |
@@ -60,9 +59,47 @@ best_metric_marker(data, ...
     'border_mode', border_mode, ...
     'highlight', highlight);
 ```
+
+You will get the following table in the Excel file. 
+
  ![image](https://github.com/shuangxu96/best_metric_marker/blob/main/example1.jpg)
 
  
 ## Example 2
+
+Suppose you have obtain AUC of n algorithms on different datasets,
+and the metric is organized as follows:
+|                 | dataset1     | dataset2    |
+| :---:           | :---:        | :---:       |
+| AUC   of alg.1 |  p11         | p12         |
+| AUC   of alg.2 |  p21         | p22         |
+| AUC   of alg.3 |  p31         | p32         |
+
+where higher AUC leads to better results. We want to round AUC
+values as 4 digits. And mark the 1st and 2nd best metrics as 'bold',
+'underline'. The code should be
+
+
+```
+data = [0.9681	0.9698	0.9572	0.8447 % AUC  of alg.1
+    0.9487	0.8786	0.9413	0.6845     % AUC  of alg.2
+    0.9594	0.9179	0.9573	0.8401];   % AUC  of alg.3
+
+num_metrics = 1;
+precision = 4;
+optval = {'max'};
+highlight.key = {'bold', 'underline'};
+highlight.value = {true,  true};
+border_mode = {'top', 'bottom'};
+
+best_metric_marker(data, ...
+    num_metrics, ...
+    'precision', precision, ...
+    'optval', optval, ...
+    'border_mode', border_mode, ...
+    'highlight', highlight);
+```
+
+You will get the following table in the Excel file. 
 
  ![image](https://github.com/shuangxu96/best_metric_marker/blob/main/example2.png)
