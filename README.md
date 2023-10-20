@@ -1,4 +1,4 @@
-# best_metric_marker
+# Best Metric Marker
 This matlab code helps researchers to automatically mark the best metrics, and write the results in the Excel file. 
 
 ## Usage
