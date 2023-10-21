@@ -14,7 +14,7 @@ red and italic, respectively.
 best_metric_marker(data, num_metrics);
 ```
 
-Of course, it also provides options to custom the marker styles and Excel formats. Please see the following examples
+Of course, it also provides options to customize the marker styles and Excel formats. Please see the following examples
 for more insights. 
 
 ## Example 1 (multiple datasets, multiple metrics)
