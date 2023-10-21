@@ -17,7 +17,7 @@ best_metric_marker(data, num_metrics);
 Of course, it also provides options to custom the marker styles and Excel formats. Please see the following examples
 for more insights. 
 
-## Example 1
+## Example 1 (multiple datasets, multiple metrics)
 Suppose you have obtain the metrics of n remote sensing image
 processing algorithms on different datasets, and the metric is
 organized as follows:
@@ -78,12 +78,11 @@ You will get the following table in the Excel file.
  ![image](https://github.com/shuangxu96/best_metric_marker/blob/main/example1.jpg)
 
  
-## Example 2
-
+## Example 2 (multiple datasets, single metrics)
 Suppose you have obtain AUC of n algorithms on different datasets,
 and the metric is organized as follows:
-|                 | dataset1     | dataset2    |
-| :---:           | :---:        | :---:       |
+|                | dataset1     | dataset2    |
+| :---:          | :---:        | :---:       |
 | AUC   of alg.1 |  p11         | p12         |
 | AUC   of alg.2 |  p21         | p22         |
 | AUC   of alg.3 |  p31         | p32         |
