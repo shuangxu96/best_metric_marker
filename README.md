@@ -78,7 +78,7 @@ You will get the following table in the Excel file.
  ![image](https://github.com/shuangxu96/best_metric_marker/blob/main/example1.jpg)
 
  
-## Example 2 (multiple datasets, single metrics)
+## Example 2 (multiple datasets, single metric)
 Suppose you have obtain AUC of n algorithms on different datasets,
 and the metric is organized as follows:
 |                | dataset1     | dataset2    |
