@@ -4,6 +4,19 @@ This matlab code helps researchers to automatically mark the best metrics, and w
 ## Usage
 Please read `best_metric_marker.m`, where there are clear descriptions about how to use this code. 
 
+## Quick Start
+
+Given a matrix `data` containing `num_metrics` metrics of different algorithms, the following code will save the 
+Excel file filled by `data`, where each kind of metric is marked for the first three largest values with bold, 
+red and italic, respectively.
+
+```
+best_metric_marker(data, num_metrics);
+```
+
+Of course, it also provides options to custom the marker styles and Excel formats. Please see the following examples
+for more insights. 
+
 ## Example 1
 Suppose you have obtain the metrics of n remote sensing image
 processing algorithms on different datasets, and the metric is
